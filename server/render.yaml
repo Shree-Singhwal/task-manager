@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: task-manager-api
+    env: node
+    buildCommand: npm ci --ignore-scripts
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        value: https://your-app.vercel.app
