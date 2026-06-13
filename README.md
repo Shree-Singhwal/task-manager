@@ -2,7 +2,12 @@
 
 A full-stack task management app built as a take-home exercise. Users can create, view, update, and delete personal tasks — with filtering, search, overdue highlighting, and persistence across server restarts.
 
-**Live Demo:** _Add your deployed links here_
+
+**Live Demo:** https://task-manager-seven-cyan-49.vercel.app
+
+**Backend API:** https://task-manager-api-8c5r.onrender.com
+
+**Repository:** https://github.com/Shree-Singhwal/task-manager
 
 ---
 
@@ -38,13 +43,86 @@ A full-stack task management app built as a take-home exercise. Users can create
 
 ---
 
+
+## What Works / What Doesn't
+
+### Working Features ✅
+
+* Create tasks with title, description, and due date
+* View all tasks sorted newest first
+* Edit existing tasks
+* Toggle completed/incomplete status
+* Delete tasks with confirmation
+* Filter tasks by All / Active / Completed
+* Search tasks by title (debounced)
+* Active and completed task counters
+* Overdue task highlighting
+* Empty state UI
+* Data persistence using JSON storage
+* Responsive UI
+* Frontend deployed on Vercel
+* Backend deployed on Render
+
+### Known Limitations ⚠️
+
+* Render free tier may take a few seconds to wake up after inactivity
+* Drag-and-drop reordering is not implemented
+* Database is file-based (JSON) rather than SQL/NoSQL
+* No user authentication or multi-user support
+
+---
+
+## Deployment
+
+### Frontend
+
+Hosted on Vercel:
+
+https://task-manager-seven-cyan-49.vercel.app
+
+### Backend
+
+Hosted on Render:
+
+https://task-manager-api-8c5r.onrender.com
+
+### Environment Variable
+
+Frontend requires:
+
+```env
+VITE_API_URL=https://task-manager-api-8c5r.onrender.com/api
+```
+
+---
+## Testing
+
+Backend API routes were tested using **Jest** and **Supertest**.
+
+Run tests locally:
+
+```bash
+cd server
+npm test
+```
+
+Covered scenarios:
+
+* Fetching tasks
+* Task creation validation
+* Task updates
+* Toggle completion
+* Task deletion
+* Error handling (400 / 404 responses)
+
+---
 ## How to Run Locally
 
 > Requires **Node.js 18+**. No other tools needed.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/task-manager.git
+git clone https://github.com/Shree Singhwal/task-manager.git
 cd task-manager
 
 # 2. Install all dependencies (root + server + client)
@@ -188,16 +266,11 @@ With more time, I would:
 
 ---
 
-## What Works / What Doesn't
 
-✅ All Must Have and Should Have requirements  
-✅ Bonus: search and JSON persistence  
-⚠️ Drag-and-drop reorder — installed but not wired up (ran out of time)  
-⚠️ Tests — skipped to focus on core functionality  
-
----
 
 ## Author
 
 Shree Singhwal  
-GitHub: [@Shree-Singhwal](https://github.com/Shree-Singhwal)
+GitHub: [@Shree-Singhwal](https://github.com/
+
+LinkedIn: https://www.linkedin.com/in/shree-singhwalShree-Singhwal)
